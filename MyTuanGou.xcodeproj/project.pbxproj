@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF8823A51A234B1E001EA28D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8823A41A234B1E001EA28D /* main.m */; };
+		BF8823A81A234B1E001EA28D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8823A71A234B1E001EA28D /* AppDelegate.m */; };
+		BF8823AB1A234B1E001EA28D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8823AA1A234B1E001EA28D /* ViewController.m */; };
+		BF8823AE1A234B1E001EA28D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8823AC1A234B1E001EA28D /* Main.storyboard */; };
+		BF8823B01A234B1E001EA28D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8823AF1A234B1E001EA28D /* Images.xcassets */; };
+		BF8823B31A234B1E001EA28D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8823B11A234B1E001EA28D /* LaunchScreen.xib */; };
+		BF8823BF1A234B1E001EA28D /* MyTuanGouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8823BE1A234B1E001EA28D /* MyTuanGouTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF8823B91A234B1E001EA28D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8823971A234B1E001EA28D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF88239E1A234B1E001EA28D;
+			remoteInfo = MyTuanGou;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF88239F1A234B1E001EA28D /* MyTuanGou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTuanGou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8823A31A234B1E001EA28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8823A41A234B1E001EA28D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF8823A61A234B1E001EA28D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF8823A71A234B1E001EA28D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF8823A91A234B1E001EA28D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BF8823AA1A234B1E001EA28D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF8823AD1A234B1E001EA28D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF8823AF1A234B1E001EA28D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF8823B21A234B1E001EA28D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BF8823B81A234B1E001EA28D /* MyTuanGouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTuanGouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8823BD1A234B1E001EA28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8823BE1A234B1E001EA28D /* MyTuanGouTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTuanGouTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF88239C1A234B1E001EA28D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8823B51A234B1E001EA28D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF8823961A234B1E001EA28D = {
+			isa = PBXGroup;
+			children = (
+				BF8823A11A234B1E001EA28D /* MyTuanGou */,
+				BF8823BB1A234B1E001EA28D /* MyTuanGouTests */,
+				BF8823A01A234B1E001EA28D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF8823A01A234B1E001EA28D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF88239F1A234B1E001EA28D /* MyTuanGou.app */,
+				BF8823B81A234B1E001EA28D /* MyTuanGouTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF8823A11A234B1E001EA28D /* MyTuanGou */ = {
+			isa = PBXGroup;
+			children = (
+				BF8823A61A234B1E001EA28D /* AppDelegate.h */,
+				BF8823A71A234B1E001EA28D /* AppDelegate.m */,
+				BF8823A91A234B1E001EA28D /* ViewController.h */,
+				BF8823AA1A234B1E001EA28D /* ViewController.m */,
+				BF8823AC1A234B1E001EA28D /* Main.storyboard */,
+				BF8823AF1A234B1E001EA28D /* Images.xcassets */,
+				BF8823B11A234B1E001EA28D /* LaunchScreen.xib */,
+				BF8823A21A234B1E001EA28D /* Supporting Files */,
+			);
+			path = MyTuanGou;
+			sourceTree = "<group>";
+		};
+		BF8823A21A234B1E001EA28D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF8823A31A234B1E001EA28D /* Info.plist */,
+				BF8823A41A234B1E001EA28D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF8823BB1A234B1E001EA28D /* MyTuanGouTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF8823BE1A234B1E001EA28D /* MyTuanGouTests.m */,
+				BF8823BC1A234B1E001EA28D /* Supporting Files */,
+			);
+			path = MyTuanGouTests;
+			sourceTree = "<group>";
+		};
+		BF8823BC1A234B1E001EA28D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF8823BD1A234B1E001EA28D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF88239E1A234B1E001EA28D /* MyTuanGou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8823C21A234B1E001EA28D /* Build configuration list for PBXNativeTarget "MyTuanGou" */;
+			buildPhases = (
+				BF88239B1A234B1E001EA28D /* Sources */,
+				BF88239C1A234B1E001EA28D /* Frameworks */,
+				BF88239D1A234B1E001EA28D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTuanGou;
+			productName = MyTuanGou;
+			productReference = BF88239F1A234B1E001EA28D /* MyTuanGou.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF8823B71A234B1E001EA28D /* MyTuanGouTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8823C51A234B1E001EA28D /* Build configuration list for PBXNativeTarget "MyTuanGouTests" */;
+			buildPhases = (
+				BF8823B41A234B1E001EA28D /* Sources */,
+				BF8823B51A234B1E001EA28D /* Frameworks */,
+				BF8823B61A234B1E001EA28D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8823BA1A234B1E001EA28D /* PBXTargetDependency */,
+			);
+			name = MyTuanGouTests;
+			productName = MyTuanGouTests;
+			productReference = BF8823B81A234B1E001EA28D /* MyTuanGouTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF8823971A234B1E001EA28D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Louis;
+				TargetAttributes = {
+					BF88239E1A234B1E001EA28D = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BF8823B71A234B1E001EA28D = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = BF88239E1A234B1E001EA28D;
+					};
+				};
+			};
+			buildConfigurationList = BF88239A1A234B1E001EA28D /* Build configuration list for PBXProject "MyTuanGou" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF8823961A234B1E001EA28D;
+			productRefGroup = BF8823A01A234B1E001EA28D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF88239E1A234B1E001EA28D /* MyTuanGou */,
+				BF8823B71A234B1E001EA28D /* MyTuanGouTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF88239D1A234B1E001EA28D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8823AE1A234B1E001EA28D /* Main.storyboard in Resources */,
+				BF8823B31A234B1E001EA28D /* LaunchScreen.xib in Resources */,
+				BF8823B01A234B1E001EA28D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8823B61A234B1E001EA28D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF88239B1A234B1E001EA28D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8823AB1A234B1E001EA28D /* ViewController.m in Sources */,
+				BF8823A81A234B1E001EA28D /* AppDelegate.m in Sources */,
+				BF8823A51A234B1E001EA28D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8823B41A234B1E001EA28D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8823BF1A234B1E001EA28D /* MyTuanGouTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF8823BA1A234B1E001EA28D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF88239E1A234B1E001EA28D /* MyTuanGou */;
+			targetProxy = BF8823B91A234B1E001EA28D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF8823AC1A234B1E001EA28D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8823AD1A234B1E001EA28D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF8823B11A234B1E001EA28D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8823B21A234B1E001EA28D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF8823C01A234B1E001EA28D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF8823C11A234B1E001EA28D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF8823C31A234B1E001EA28D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyTuanGou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF8823C41A234B1E001EA28D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyTuanGou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF8823C61A234B1E001EA28D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyTuanGouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTuanGou.app/MyTuanGou";
+			};
+			name = Debug;
+		};
+		BF8823C71A234B1E001EA28D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyTuanGouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTuanGou.app/MyTuanGou";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF88239A1A234B1E001EA28D /* Build configuration list for PBXProject "MyTuanGou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8823C01A234B1E001EA28D /* Debug */,
+				BF8823C11A234B1E001EA28D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8823C21A234B1E001EA28D /* Build configuration list for PBXNativeTarget "MyTuanGou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8823C31A234B1E001EA28D /* Debug */,
+				BF8823C41A234B1E001EA28D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF8823C51A234B1E001EA28D /* Build configuration list for PBXNativeTarget "MyTuanGouTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8823C61A234B1E001EA28D /* Debug */,
+				BF8823C71A234B1E001EA28D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF8823971A234B1E001EA28D /* Project object */;
+}
