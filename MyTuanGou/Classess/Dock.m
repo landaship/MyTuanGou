@@ -8,6 +8,15 @@
 
 #import "Dock.h"
 #import "MoreItem.h"
+#import "LocationItem.h"
+#import "TabItem.h"
+
+@interface Dock()
+{
+    NSMutableArray *_tabArr;  // tab 里包含的按钮数量
+    TabItem *_selectedTab;  // 当前选中的Tab
+}
+@end
 
 @implementation Dock
 
@@ -24,6 +33,12 @@
         
         // 2.添加more选项
         [self addMore];
+        
+        // 3.添加定位标签
+        [self addLocation];
+        
+        // 4.添加Table
+        [self addTabItem];
     }
     
     return self;
@@ -44,8 +59,15 @@
     MoreItem *more = [[MoreItem alloc]init];
     CGRect frame = CGRectMake(0, self.frame.size.height - kDockItemH, 0, 0);
     more.frame = frame;
-
+   
     [self addSubview:more];
+}
+
+- (void)addLocation
+{
+    LocationItem *location = [[LocationItem alloc]init];
+    location.frame = CGRectMake(0, self.frame.size.height - 2*kDockItemH, 0, 0);
+    [self addSubview:location];
 }
 
 // 从写setFrame，防止外部修改Frame
@@ -54,5 +76,45 @@
     frame.size.width = kDockItemW;
 //    self.frame = frame;   // 很容易发生的错误
     [super setFrame:frame];
+}
+
+- (void)addTabItem
+{
+    // 1.初始化按钮
+    _tabArr = [[NSMutableArray alloc]initWithObjects:@"ic_deal", @"ic_map", @"ic_collect", @"ic_mine",  nil];
+    
+    // 2. 添加按钮
+    for (int i=0; i < _tabArr.count; i++) {
+        NSString *str = [_tabArr objectAtIndex:i];
+        NSString *str_highlight = [str stringByAppendingString:@"hl"];
+        
+        [self addOneTab:str selectedIcon:str_highlight Index:i+1];
+    }
+    
+    // 3. 添加底部的横线
+    UIImageView *seperateLine = [[UIImageView alloc]init];
+    seperateLine.frame = CGRectMake(0, kDockItemH*(_tabArr.count+1), kDockItemW, 2);
+    seperateLine.image = [UIImage imageNamed:@"separator_tabbar_item"];
+    [self addSubview:seperateLine];
+}
+
+- (void) addOneTab:(NSString *)icon selectedIcon:(NSString *)selectedIcon Index:(NSInteger) index
+{
+    TabItem *tab = [[TabItem alloc]init];
+    tab.frame = CGRectMake(0, kDockItemH * index, 0, 0);
+    [tab setIcon:icon selectedIcon:selectedIcon];
+    [tab addTarget:self action:@selector(tabClicked:) forControlEvents:UIControlEventTouchDown];
+    [self addSubview:tab];
+    
+    if (index == 1) {
+        [self tabClicked:tab];
+    }
+}
+
+- (void) tabClicked:(TabItem *)tab
+{
+    _selectedTab.enabled = YES;
+    tab.enabled = NO;
+    _selectedTab = tab;
 }
 @end

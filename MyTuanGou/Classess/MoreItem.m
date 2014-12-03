@@ -17,6 +17,8 @@
          self.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin;
         
           [self setIcon:@"ic_more" selectedIcon:@"ic_more_hl"];
+        
+         self.adjustsImageWhenDisabled = NO;
     }
     
     return self;

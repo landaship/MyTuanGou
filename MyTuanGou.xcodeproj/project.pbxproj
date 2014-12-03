@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF296CF11A24B7A0008CFACA /* LocationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF296CF01A24B7A0008CFACA /* LocationItem.m */; };
+		BF7967C21A2DC095005BEC1F /* TabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7967C11A2DC095005BEC1F /* TabItem.m */; };
 		BF8823AE1A234B1E001EA28D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8823AC1A234B1E001EA28D /* Main.storyboard */; };
 		BF8823B01A234B1E001EA28D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8823AF1A234B1E001EA28D /* Images.xcassets */; };
 		BF8823B31A234B1E001EA28D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8823B11A234B1E001EA28D /* LaunchScreen.xib */; };
@@ -233,6 +235,10 @@
 
 /* Begin PBXFileReference section */
 		BF296CEE1A24A25A008CFACA /* IOSHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSHeader.h; sourceTree = "<group>"; };
+		BF296CEF1A24B7A0008CFACA /* LocationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationItem.h; sourceTree = "<group>"; };
+		BF296CF01A24B7A0008CFACA /* LocationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationItem.m; sourceTree = "<group>"; };
+		BF7967C01A2DC095005BEC1F /* TabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabItem.h; sourceTree = "<group>"; };
+		BF7967C11A2DC095005BEC1F /* TabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabItem.m; sourceTree = "<group>"; };
 		BF88239F1A234B1E001EA28D /* MyTuanGou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTuanGou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8823A31A234B1E001EA28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8823AD1A234B1E001EA28D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -587,6 +593,10 @@
 				BF8823DA1A236594001EA28D /* BaseItem.m */,
 				BF8823DC1A2365C2001EA28D /* MoreItem.h */,
 				BF8823DD1A2365C2001EA28D /* MoreItem.m */,
+				BF296CEF1A24B7A0008CFACA /* LocationItem.h */,
+				BF296CF01A24B7A0008CFACA /* LocationItem.m */,
+				BF7967C01A2DC095005BEC1F /* TabItem.h */,
+				BF7967C11A2DC095005BEC1F /* TabItem.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1192,7 +1202,9 @@
 			files = (
 				BF8823CE1A235117001EA28D /* AppDelegate.m in Sources */,
 				BF8823DE1A2365C2001EA28D /* MoreItem.m in Sources */,
+				BF7967C21A2DC095005BEC1F /* TabItem.m in Sources */,
 				BF8823CF1A235117001EA28D /* main.m in Sources */,
+				BF296CF11A24B7A0008CFACA /* LocationItem.m in Sources */,
 				BF8823DB1A236594001EA28D /* BaseItem.m in Sources */,
 				BF8823D81A23657D001EA28D /* Dock.m in Sources */,
 				BF8823D21A235137001EA28D /* MainViewController.m in Sources */,

@@ -10,6 +10,9 @@
 #import "FrameHeader.h"
 
 @interface BaseItem : UIButton
+{
+    UIImageView *_seperateLine;
+}
 
 - (void)setIcon:(NSString *)icon selectedIcon:(NSString *)selectedIcon;
 - (void)setIcon:(NSString *)icon;

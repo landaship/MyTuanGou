@@ -27,7 +27,7 @@
 - (void)addDock
 {
     Dock *dock = [[Dock alloc]init];
-    CGRect frame = CGRectMake(0, kStatusBarH, 0, self.view.frame.size.height);
+    CGRect frame = CGRectMake(0, kStatusBarH, 0, self.view.frame.size.height - kStatusBarH);
     dock.frame = frame;
     [self.view addSubview:dock];
 }

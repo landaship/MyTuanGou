@@ -12,7 +12,7 @@
 
 // 1.DockItem的宽高
 #define kDockItemW 100
-#define kDockItemH 100
+#define kDockItemH 80
 
 // 2.状态栏高度
 #define kStatusBarH (IS_IOS6?0:20)

@@ -22,7 +22,9 @@
     if (self) {
         // 1.添加横线
         UIImageView *seperateLine = [[UIImageView alloc]init];
-        seperateLine.frame = CGRectMake(0, 0, kDockItemW, 4);
+        seperateLine.frame = CGRectMake(0, 0, kDockItemW, 2);
+        seperateLine.image = [UIImage imageNamed:@"separator_tabbar_item"];
+        _seperateLine = seperateLine;
         [self addSubview:seperateLine];
     }
     
@@ -51,4 +53,9 @@
     [super setFrame:frame];
 }
 
+
+- (void)setHighlighted:(BOOL)highlighted
+{
+    // 禁止高亮
+}
 @end
