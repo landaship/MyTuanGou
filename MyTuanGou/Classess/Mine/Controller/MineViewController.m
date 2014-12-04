@@ -1,35 +1,34 @@
 //
-//  MainViewController.m
+//  MineViewController.m
 //  MyTuanGou
 //
-//  Created by Louis on 11/24/14.
+//  Created by Louis on 12/3/14.
 //  Copyright (c) 2014 Louis. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "Dock.h"
-#import "FrameHeader.h"
+#import "MineViewController.h"
+#import "UIBarButtonItem+YE.h"
 
-@interface MainViewController ()
+@interface MineViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation MineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor greenColor];
 
-    [self addDock];
+    self.navigationItem.title = @"我的";
+    self.view.backgroundColor = [UIColor greenColor];
+    
+    UIBarButtonItem *returnBack = [[UIBarButtonItem alloc]initWithTitle: @"退出登录" style:UIBarButtonItemStylePlain target:self  action:@selector(returnBack:)];
+    
+    self.navigationItem.rightBarButtonItem = returnBack;
 }
 
-- (void)addDock
+- (void)returnBack:(UIBarButtonItem *)item
 {
-    Dock *dock = [[Dock alloc]init];
-    CGRect frame = CGRectMake(0, kStatusBarH, 0, self.view.frame.size.height - kStatusBarH);
-    dock.frame = frame;
-    [self.view addSubview:dock];
+    NSLog(@"on clicked back...");
 }
 
 - (void)didReceiveMemoryWarning {

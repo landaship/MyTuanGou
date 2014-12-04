@@ -88,7 +88,7 @@
         NSString *str = [_tabArr objectAtIndex:i];
         NSString *str_highlight = [str stringByAppendingString:@"hl"];
         
-        [self addOneTab:str selectedIcon:str_highlight Index:i+1];
+        [self addOneTab:str selectedIcon:str_highlight Index:i];
     }
     
     // 3. 添加底部的横线
@@ -101,18 +101,23 @@
 - (void) addOneTab:(NSString *)icon selectedIcon:(NSString *)selectedIcon Index:(NSInteger) index
 {
     TabItem *tab = [[TabItem alloc]init];
-    tab.frame = CGRectMake(0, kDockItemH * index, 0, 0);
+    tab.frame = CGRectMake(0, kDockItemH * (index+1), 0, 0);
     [tab setIcon:icon selectedIcon:selectedIcon];
+    tab.tag = index +1000;
     [tab addTarget:self action:@selector(tabClicked:) forControlEvents:UIControlEventTouchDown];
     [self addSubview:tab];
     
-    if (index == 1) {
+    if (index == 0) {
         [self tabClicked:tab];
     }
 }
 
 - (void) tabClicked:(TabItem *)tab
 {
+    if ([_delegate respondsToSelector:@selector(Dock:changeFrom:to:)]) {
+        [_delegate Dock:self changeFrom:(_selectedTab.tag - 1000) to:(tab.tag - 1000)];
+    }
+    
     _selectedTab.enabled = YES;
     tab.enabled = NO;
     _selectedTab = tab;
