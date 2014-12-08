@@ -7,6 +7,8 @@
 //
 
 #import "MoreItem.h"
+#import "MoreViewController.h"
+#import "AVNavigationController.h"
 
 @implementation MoreItem
 
@@ -18,18 +20,26 @@
         
           [self setIcon:@"ic_more" selectedIcon:@"ic_more_hl"];
         
+        [self addTarget:self action:@selector(onClicked) forControlEvents:UIControlEventTouchDown];
+        
          self.adjustsImageWhenDisabled = NO;
     }
     
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void) onClicked
+{
+    self.enabled = NO;
+    
+    MoreViewController *more = [[MoreViewController alloc]init];
+    AVNavigationController *nv = [[AVNavigationController alloc]initWithRootViewController:more];
+    more.moreItem = self;
+    nv.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    nv.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self.window.rootViewController presentViewController:nv animated:YES completion:^{
+        ;
+    }];
 }
-*/
 
 @end

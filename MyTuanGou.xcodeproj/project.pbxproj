@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1A12671A35D53A00DAEBC0 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A12661A35D53A00DAEBC0 /* MoreViewController.m */; };
+		BF1A12811A35DDE800DAEBC0 /* CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A12801A35DDE800DAEBC0 /* CityListViewController.m */; };
 		BF4CCF7C1A2F4DE600BD6851 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4CCF701A2F4DE600BD6851 /* MainViewController.m */; };
 		BF4CCF7D1A2F4DE600BD6851 /* BaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4CCF731A2F4DE600BD6851 /* BaseItem.m */; };
 		BF4CCF7E1A2F4DE600BD6851 /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4CCF751A2F4DE600BD6851 /* Dock.m */; };
@@ -242,6 +244,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF1A12651A35D53A00DAEBC0 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		BF1A12661A35D53A00DAEBC0 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		BF1A127F1A35DDE800DAEBC0 /* CityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListViewController.h; sourceTree = "<group>"; };
+		BF1A12801A35DDE800DAEBC0 /* CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListViewController.m; sourceTree = "<group>"; };
 		BF4CCF6B1A2F4DE600BD6851 /* FrameHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameHeader.h; sourceTree = "<group>"; };
 		BF4CCF6C1A2F4DE600BD6851 /* IOSHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSHeader.h; sourceTree = "<group>"; };
 		BF4CCF6F1A2F4DE600BD6851 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -505,6 +511,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF1A12621A35D52700DAEBC0 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A12631A35D52700DAEBC0 /* Controller */,
+				BF1A12641A35D52700DAEBC0 /* View */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		BF1A12631A35D52700DAEBC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A12651A35D53A00DAEBC0 /* MoreViewController.h */,
+				BF1A12661A35D53A00DAEBC0 /* MoreViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF1A12641A35D52700DAEBC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BF4CCF6A1A2F4DE600BD6851 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +560,8 @@
 			children = (
 				BF4CCF6F1A2F4DE600BD6851 /* MainViewController.h */,
 				BF4CCF701A2F4DE600BD6851 /* MainViewController.m */,
+				BF1A127F1A35DDE800DAEBC0 /* CityListViewController.h */,
+				BF1A12801A35DDE800DAEBC0 /* CityListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -733,6 +766,7 @@
 		BF8823C81A235117001EA28D /* Classess */ = {
 			isa = PBXGroup;
 			children = (
+				BF1A12621A35D52700DAEBC0 /* More */,
 				BF4CCF821A2F4E7100BD6851 /* Collect */,
 				BF4CCF851A2F4E7100BD6851 /* Deal */,
 				BF4CCF881A2F4E7100BD6851 /* Map */,
@@ -1361,9 +1395,11 @@
 				BF8823CE1A235117001EA28D /* AppDelegate.m in Sources */,
 				BF4CCF7C1A2F4DE600BD6851 /* MainViewController.m in Sources */,
 				BF4CCF991A2F4F0200BD6851 /* CollectViewController.m in Sources */,
+				BF1A12671A35D53A00DAEBC0 /* MoreViewController.m in Sources */,
 				BF771D281A2FEF0300D70049 /* NSString+YE.m in Sources */,
 				BF8823CF1A235117001EA28D /* main.m in Sources */,
 				BF4CCF931A2F4EEB00BD6851 /* MapViewController.m in Sources */,
+				BF1A12811A35DDE800DAEBC0 /* CityListViewController.m in Sources */,
 				BF4CCF9D1A2F5BA800BD6851 /* AVNavigationController.m in Sources */,
 				BF771D261A2FEF0300D70049 /* UIImage+YE.m in Sources */,
 				BF4CCF801A2F4DE600BD6851 /* MoreItem.m in Sources */,

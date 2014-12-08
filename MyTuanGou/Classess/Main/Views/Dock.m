@@ -59,7 +59,7 @@
     MoreItem *more = [[MoreItem alloc]init];
     CGRect frame = CGRectMake(0, self.frame.size.height - kDockItemH, 0, 0);
     more.frame = frame;
-   
+
     [self addSubview:more];
 }
 

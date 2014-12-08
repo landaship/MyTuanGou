@@ -36,7 +36,7 @@
     CGFloat w = self.view.frame.size.width - kDockItemW;
     CGFloat h = self.view.frame.size.height;
     _contentView.frame = CGRectMake(kDockItemW, kStatusBarH, w, h);
-    _contentView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin |UIViewAutoresizingFlexibleWidth;
+    _contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight |UIViewAutoresizingFlexibleWidth;
     _contentView.backgroundColor = [UIColor blueColor];
     [self.view addSubview:_contentView];
     

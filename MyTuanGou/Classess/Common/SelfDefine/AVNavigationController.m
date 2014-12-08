@@ -17,10 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
 
++(void)initialize
+{
+    
     // 2.设置导航栏的背景图片 --背景图片高度不对导致的那个现象
-    [self.navigationBar setBackgroundImage:[UIImage stretchImage:@"bg_navigation"] forBarMetrics:UIBarMetricsDefault];
-    self.navigationBar.translucent = NO;
+    UINavigationBar *bar = [UINavigationBar appearance];
+    [bar setBackgroundImage:[UIImage stretchImage:@"bg_navigation"] forBarMetrics:UIBarMetricsDefault];
+    bar.translucent = NO;
     
     // 3.设置导航栏文字的主题
     //    [bar setTitleTextAttributes:@{
@@ -48,7 +53,6 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     // 他的Freame是320*480
     //    NSLog(@"%s Navigation的Frame:%@", __FUNCTION__,     NSStringFromCGRect(self.view.frame));
-    
 }
 
 - (void)didReceiveMemoryWarning {

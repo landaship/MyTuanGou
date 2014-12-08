@@ -7,6 +7,7 @@
 //
 
 #import "LocationItem.h"
+#import "CityListViewController.h"
 
 #define kImageScale 0.5  // 图片大小比例
 
@@ -31,9 +32,21 @@
         
         // 4.设置图片属性
         self.imageView.contentMode = UIViewContentModeCenter;
+        
+        // 5. 添加事件
+        [self addTarget:self action:@selector(locationClicked) forControlEvents:UIControlEventTouchDown];
     }
     
     return self;
+}
+
+- (void) locationClicked
+{
+    CityListViewController *cityList = [[CityListViewController alloc]init];
+    UIPopoverController *popover = [[UIPopoverController alloc]initWithContentViewController:cityList];
+
+    popover.popoverContentSize = CGSizeMake(320, 480);
+    [popover presentPopoverFromRect:self.bounds inView:self permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
 }
 
 // 调整按钮文字和图片的位置
